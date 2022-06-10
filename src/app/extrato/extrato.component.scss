@@ -1,0 +1,40 @@
+.titulo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+
+.tabela{
+  padding: 2px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 8px black;
+  border-radius: 5px;
+
+  &__cabecalho {
+    color: var(--primary);
+
+    &__conteudo {
+      padding: 10px;
+      border-bottom: 2px solid black;
+    }
+  }
+
+  &__linha{
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    &:last-child {
+      .tabela__conteudo {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__conteudo {
+    padding: 10px;
+    border-bottom: 1px solid var(--primary);
+  }
+}
